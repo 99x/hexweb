@@ -1,0 +1,318 @@
+html {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  position: relative;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body p {
+  font-family: "Roboto", sans-serif;
+}
+
+body .wrapper {
+  height: 100% !important;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+body .logo {
+  height: 30px;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: none;
+}
+
+body.disabled-onepage-scroll .onepage-wrapper section {
+  min-height: 100%;
+  height: auto;
+}
+
+body.disabled-onepage-scroll .main section.page3 .page_container,
+body.disabled-onepage-scroll .main section .page_container {
+  padding: 20px;
+  margin-top: 150px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body.disabled-onepage-scroll .main section.page1 > img {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+}
+
+body .disabled-onepage-scroll .main section > img {
+  position: relative;
+  max-width: 80%;
+  bottom: 0;
+}
+
+body.disabled-onepage-scroll code {
+  width: 95%;
+  margin: 0 auto 25px;
+  float: none;
+  overflow: hidden;
+}
+
+body.disabled-onepage-scroll .main section.page3 .page_container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+}
+
+.headings, h1, h2 {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+h1 {
+  color: #263238;
+  margin-bottom: 5px;
+  font-size: 68px;
+  letter-spacing: 0;
+  font-weight: bold;
+  line-height: 91px;
+}
+
+h1 span {
+  color: #fc3c2d;
+}
+
+h2 {
+  color: #263238;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.page1 .site-header {
+  margin-top: 150px;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main h1 {
+  padding: 150px 50px;
+  float: left;
+  width: 100%;
+  font-size: 45px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: #ffffff;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  z-index: 10;
+}
+
+.main section {
+  overflow: hidden;
+}
+
+.main section > img {
+  position: absolute;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.page1 {
+  background-color: #fff;
+  background: url("../../image/birdge-02_animated.svg") no-repeat bottom fixed;
+  background-size: calc(100% + 30px);
+  background-position: -15px 102%;
+  border-bottom: 2px solid #677881;
+}
+
+.page1 h1 {
+  text-align: center;
+}
+
+.page2 {
+  background-color: #f7f9f8;
+}
+
+.page2 > img {
+  position: absolute;
+  top: -300px;
+  left: 50%;
+  margin-left: -1095px;
+}
+
+.page2 .page_container {
+  margin-top: 240px;
+  overflow: hidden;
+}
+
+.page2 h1 {
+  margin-top: 40px;
+  margin-bottom: -10px;
+}
+
+.page2 .view-more {
+  width: 216px;
+}
+
+.page2 .view-more a {
+  font-size: 17px;
+  font-family: "Roboto";
+  color: #263238;
+  font-weight: bold;
+}
+
+.page2 .secondory-text {
+  font-size: 21px;
+  color: #263238;
+}
+
+.page2 .protolio-container {
+  position: absolute;
+  top: 30%;
+}
+
+.page2 .portfolio-items {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+
+.page2 .portfolio-items h3 {
+  font-size: 21px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+.page3 {
+  background: url("../../image/team.jpg") no-repeat;
+  background-size: 100%;
+  text-align: center;
+}
+
+.page3 h1 {
+  margin-top: 50px;
+}
+
+.page4 h1 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.page4 h2 {
+  font-size: 32px;
+  font-family: "Poppins";
+  color: #90a4ad;
+}
+
+.page4 #map {
+  height: 260px;
+}
+
+.page4 #map2 {
+  height: 260px;
+}
+
+.page4 .mapcontainer {
+  margin-top: 4%;
+}
+
+.page4 .mapcontainer address {
+  font-size: 17px;
+  font-family: "Roboto";
+  color: #546e7a;
+  text-align: left;
+  margin-left: -15px;
+  margin-top: 3%;
+  line-height: 34px;
+}
+
+.page4 .mapcontainer address .phone {
+  text-align: right;
+}
+
+.page4 .follow-us {
+  text-align: center;
+  font-size: 13px;
+  font-family: "Poppins";
+  margin-top: 2%;
+}
+
+.page4 .follow-us .icons {
+  margin-top: 2%;
+}
+
+.page4 .follow-us .icons .social-icons {
+  margin-right: 40px;
+  color: #90a4ad;
+}
+
+.page4 .follow-us button.mdi::before,
+.page4 .follow-us i.mdi::before,
+.page4 .follow-us span.mdi::before {
+  font-size: 54px;
+  line-height: 13px;
+}
+
+.page4 .follow-us a .social-icons {
+  margin-left: 10px;
+}
+
+.main section.page1 h1,
+.main section.page2 h1,
+.main section.page3 h1,
+.main section.page4 h1 {
+  padding: 0;
+  font-size: 68px;
+  letter-spacing: -1px;
+  color: #263238;
+}
+
+.main section.page1 h2,
+.main section.page2 h2,
+.main section.page3 h2,
+.main section.page4 h2 {
+  line-height: 160%;
+  font-weight: 100;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px;
+  /* Vertically center the text there */
+  background-color: #263238;
+  color: #f7f9f8;
+  text-align: center;
+}
+
+.footer button.mdi::before,
+.footer i.mdi::before,
+.footer span.mdi::before {
+  font-size: 15px;
+  line-height: 13px;
+}
+
+.footer i {
+  color: #fc3c2d;
+}
