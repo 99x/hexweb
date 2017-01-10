@@ -366,6 +366,19 @@ header {
     }
 }
 
+.dotstyle-smalldotstroke li.current {
+    box-shadow: 0 0 0 2px #fc3c2d;
+}
+
+.dotstyle-smalldotstroke li a {
+    background-color: rgba(38,50,56, 0.2);
+}
+.dotstyle-smalldotstroke li a:hover,
+.dotstyle-smalldotstroke li a:focus,
+.dotstyle-smalldotstroke li.current a {
+    background-color: #fc3c2d
+}
+
 .footer {
     position: absolute;
     bottom: 0;
