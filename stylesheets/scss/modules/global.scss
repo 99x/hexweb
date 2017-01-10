@@ -41,7 +41,7 @@ body {
         }
 
         .main section {
-            &.page3 .page_container,
+            &.page5 .page_container,
             .page_container {
                 padding: 20px;
                 margin-top: 150px;
@@ -72,7 +72,7 @@ body {
             overflow: hidden;
         }
 
-        .main section.page3 .page_container {
+        .main section.page4 .page_container {
             width: 90%;
             margin-left: auto;
             margin-right: auto;
@@ -137,6 +137,10 @@ header {
     z-index: 10;
 }
 
+.inline-block{
+    display:inline-block;
+}
+
 .main {
     section {
         overflow: hidden;
@@ -171,11 +175,13 @@ header {
             .page_container {
                 margin-top: 240px;
                 overflow: hidden;
+
             }
 
             h1 {
                 margin-top: 40px;
                 margin-bottom: -10px;
+                text-align: center;
             }
 
             .view-more {
@@ -195,6 +201,7 @@ header {
             .secondory-text {
                 font-size: 21px;
                 color: $DarkGray;
+                text-align: center;
             }
 
             .protolio-container {
@@ -214,7 +221,51 @@ header {
                 }
             }
         }
+
         @at-root .page3 {
+
+            h1 {
+                margin-top: 50px;
+                text-align: center;
+            }
+
+            h3 {
+                font-size: 21px;
+                font-weight: bold;
+                font-family: $Poppins;
+            }
+
+            .media{
+                margin-bottom: 7%;
+            }
+
+            .media-heading{
+                vertical-align: middle;
+            }
+
+            .media-left{
+                padding-right:70px;
+            }
+
+            .media-body{
+                vertical-align: middle;
+            }
+
+            .service-text{
+                vertical-align: middle;
+            }
+
+            .services-container{
+                display: block;
+                margin-top: 15%;
+            }
+
+            .illustration{
+                height: 95px;
+            }
+        }
+
+        @at-root .page4 {
             background: url('../../image/team.jpg')no-repeat;
             background-size: 100%;
             text-align: center;
@@ -223,7 +274,7 @@ header {
                 margin-top: 50px;
             }
         }
-        @at-root .page4 {
+        @at-root .page5 {
             h1 {
                 margin-top: 40px;
                 text-align: center;
@@ -296,7 +347,8 @@ header {
         &.page1 h1,
         &.page2 h1,
         &.page3 h1,
-        &.page4 h1 {
+        &.page4 h1,
+        &.page5 h1 {
             padding: 0;
             font-size: 68px;
             letter-spacing: -1px;
@@ -306,7 +358,8 @@ header {
         &.page1 h2,
         &.page2 h2,
         &.page3 h2,
-        &.page4 h2 {
+        &.page4 h2,
+        &.page5 h2 {
             line-height: 160%;
             font-weight: 100;
         }
