@@ -1,0 +1,31 @@
+@mixin common-heading($size) {
+    font-weight: bold;
+    font-family: $heading-font;
+    color: $dark-font-color;
+    font-size:$size;
+}
+@mixin background-animation(){
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.3;
+    -webkit-transition-timing-function: ease-out;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+@mixin center-positioned(){
+    text-align: center;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+//animations
+@keyframes infinite-moving {
+    0%, 100% {
+        transform:translateY(0px);
+    }
+    50% {
+        transform:translateY(10px);
+    }
+}
