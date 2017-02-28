@@ -1,0 +1,79 @@
+body {
+    font-family: $normal-font;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: $font-color;
+    font-size: 16px;
+}
+
+.hex-logo {
+    width: 150px;
+    margin: 20px;
+}
+
+h1 {
+    @include common-heading(40px);
+    letter-spacing: -1px;
+    line-height: 58px;
+    span {
+        color: $hex-primary-color;
+    }
+}
+h2 {
+    @include common-heading(30px);
+    font-weight: normal;
+}
+
+h3 {
+    @include common-heading(19px);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.section-title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+    .secondory-text {
+        font-size: 21px;
+        color: $dark-font-color;
+    }
+}
+//main navigation
+.navbar-hex {
+    margin: 0;
+    padding: 0;
+    display: none;
+    li {
+        list-style: none;
+        margin-left: 20px;
+        display: inline-block;
+    }
+}
+
+//overriding bootstrap modal popup classes
+.modal-content{
+    padding:10px;
+}
+.modal-footer{
+    padding:15px 5px 5px 5px;
+    border-top-width:0;
+}
+
+@media (min-width: 992px) {
+    h1 {
+        @include common-heading(68px);
+        line-height: 91px;
+    }
+    h3 {
+        @include common-heading(21px);
+    }
+    .section-title {
+        margin-top: 100px;
+    }
+}
+

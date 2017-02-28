@@ -1,0 +1,301 @@
+//main section styles
+.hex-overview {
+    .slogan-area {
+        @include center-positioned();
+        bottom: 50px;
+    }
+    .main-section {
+        position: relative;
+    }
+    .cartoon-area {
+        
+        img {
+            display: none;
+        }
+    }
+    .scroll-down-button {
+        background-image: url(../images/scrollDown.png);
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 60px;
+        background-size: 30px;
+        cursor: pointer;
+        margin: 20px auto;
+        opacity: .8;
+        position: relative;
+        animation: infinite-moving 1.2s infinite,
+    }
+}
+
+//case study section styles
+.case-studies {
+    padding-bottom: 40px;
+    /*.portfolio-items {
+        text-align: center;
+        background-color: transparent;
+        border: none;
+    }*/
+    
+    .case-study-item {
+        padding: 30px 30px 20px;
+        cursor: pointer;
+        background-color: #fff;
+        margin-bottom: 25px;
+        @include background-animation();
+    }
+    .case-study-details {
+        padding-top: 60px;
+        background-size: 200px;
+        background-repeat: no-repeat;
+    }
+    .case-study-item:hover {
+        h2, h4, p {
+            color: #fff;
+        }
+        .case-study-details {
+            background-size: 200px;
+        }
+    }
+    .approvely {
+        .case-study-details {
+            background-image: url(../images/approvely.png);
+        }
+    }
+    .approvely:hover {
+        .case-study-details {
+            background-image: url(../images/approvely-inverted.png);
+        }
+        background-color: #44c1a2;
+    }
+    .superoffice {
+        .case-study-details {
+            background-image: url(../images/superoffice.png);
+        }
+    }
+    .superoffice:hover {
+        .case-study-details {
+            background-image: url(../images/superoffice-inverted.png);
+        }
+        background-color: #fa3d38;
+    }
+    .icon-global {
+        .case-study-details {
+            background-image: url(../images/iconglobal.png);
+        }
+    }
+    .icon-global:hover {
+        .case-study-details {
+            background-image: url(../images/iconglobal-inverted.png);
+        }
+        background-color: #40528d;
+    }
+    .hatteland {
+        .case-study-details {
+            background-image: url(../images/rambase.png);
+        }
+    }
+    .hatteland:hover {
+        .case-study-details {
+            background-image: url(../images/rambase-inverted.png);
+        }
+        background-color: #f6881f;
+    }
+    .view-more {
+        text-align: center;
+        margin: 20px 20px 50px;
+        a {
+            display: inline-block;
+            font-size: 17px;
+            font-weight: bold;
+        }
+    }
+    .caption {
+        margin-top: 15px;
+    }
+}
+
+//services section
+.our-services {
+    background-color: $hex-light-grey;
+    padding-bottom: 60px;
+    .media {
+        margin-bottom: 6%;
+        cursor: pointer;
+    }
+    .media,
+    img {
+        @include background-animation();
+    }
+    .media:hover {
+        background-color: $hex-mid-grey;
+        img {
+            transform: scale(0.8);
+        }
+    }
+    .media-heading {
+        vertical-align: middle;
+    }
+    .media-left {
+        padding-right: 32px;
+        img {
+            width: 80px;
+        }
+    }
+    .media-body {
+        vertical-align: middle;
+    }
+}
+
+//Our team
+.our-team {
+    h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .team-pic {
+        background: url(../images/team.jpg) no-repeat;
+        height: 240px;
+        background-size: 100%;
+        vertical-align: top;
+        overflow: auto;
+        background-size: cover;
+    }
+    .section-title {
+        margin-bottom: 10px;
+    }
+}
+
+//contact us 
+.contact-us {
+    h2 {
+        font-size: 32px;
+        font-family: "Poppins";
+    }
+    #map {
+        height: 260px;
+    }
+    #map2 {
+        height: 260px;
+    }
+    .mapcontainer {
+        margin-top: 4%;
+        address {
+            font-size: 17px;
+            margin-left: -15px;
+            margin-top: 3%;
+            line-height: 34px;
+        }
+        .phone {
+            text-align: right;
+        }
+    }
+    
+    .follow-us {
+        text-align: center;
+        font-size: 14px;
+        font-family: "Poppins";
+        margin-top: 40px;
+        p {
+            margin: 20px 20px 30px
+        }
+        .social-icons {
+            margin-right: 18px;
+            color: $font-color;
+        }
+        button.mdi::before,
+        i.mdi::before,
+        span.mdi::before {
+            font-size: 48px;
+            line-height: 14px;
+        }
+    }
+}
+
+//footer styles
+.footer {
+    height: 60px;
+    line-height: 60px;
+    background-color: $hex-dark-grey;
+    color: $hex-light-grey;
+    text-align: center;
+    margin-top: 40px;
+    i {
+        color: #fc3c2d;
+    }
+    .text-muted {
+        font-size: 14px;
+    }
+    
+}
+
+@media (min-height: 570px) {
+    .hex-overview {
+        h1 {
+            margin: 90px 20px 0 20px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .hex-overview {
+        h1 {
+            margin-top: 115px;
+        }
+        .cartoon-area {
+            text-align: center;
+            img {
+                width: 50%;
+                display: inline-block;
+            }
+        }
+    }
+    
+    .our-services {
+        .media {
+            margin-bottom: 7%;
+        }
+        .media-left {
+            padding-right: 70px;
+            img {
+                width: 100px;
+            }
+        }
+        .section-title {
+            margin-bottom: 60px;
+        }
+    }
+    .case-studies {
+        .case-study-details {
+            background-size: 200px;
+        }
+        .case-study-item:hover {
+            .case-study-details {
+                background-size: 200px;
+            }
+        }
+    }
+    .our-team {
+        h1 {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .team-pic {
+            height: 700px;
+        }
+    }
+    .contact-us {
+        .follow-us {
+            margin-top: 60px;
+            button.mdi::before,
+            i.mdi::before,
+            span.mdi::before {
+                font-size: 54px;
+            }
+        }
+        .overlay {
+            top: 543px;
+        }
+    }
+}
+
+@media (min-width: 1230px) {}
