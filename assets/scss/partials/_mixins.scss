@@ -19,6 +19,11 @@
     left: 0;
     right: 0;
 }
+@mixin rounded-corners($radius) {
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+}
 
 //animations
 @keyframes infinite-moving {

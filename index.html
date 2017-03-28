@@ -5,10 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Human Experience - Powered by 99X Technology</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta name="title" content="Human Experience - Official Website" />
     <meta name="description" content="A creative set of professionals dedicated to creating better experience for humans." />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto" rel="stylesheet">
     <link href="http://cdn.materialdesignicons.com/1.7.22/css/materialdesignicons.min.css" rel="stylesheet">
     <link href='assets/css/hex-theme.css' rel='stylesheet' type='text/css'>
@@ -20,10 +19,12 @@
         <a href="#">
             <img class="hex-logo" src="assets/images/logo.svg" alt="logo">
         </a>
-        <ul class="navbar-hex">
-            <li>Services we offer</li>
-            <li>Our work</li>
-            <li>Meet the team</li>
+        <span id="mobileMenuButton" class="mobile-menu-button open"></span>
+        <ul class="navbar-hex" style="display:none">
+            <li id="servicesLink">Services we offer</li>
+            <li id="workLink">Our work</li>
+            <li id="eventsLink">Events</li>
+            <li id="teamLink">Meet the team</li>
         </ul>
     </nav>
     <!-- Page 01 -->
@@ -34,7 +35,6 @@
                 <h1>Bridging the gap between your <br> <span>Ideas</span> and business</h1>
                 <div class="scroll-down-button"></div>
             </div>
-
         </div>
     </section>
 
@@ -54,7 +54,7 @@
                                         <img class="media-object illustration" src="assets/images/market-research.png" alt="Market Reserach and Competitive Analysis">
                                     </div>
                                     <div class="media-body">
-                                        <h3 class="service-text">Market  Research & <br>Analysis</h3>
+                                        <h3 class="service-text">Market Research & <br>Analysis</h3>
                                     </div>
                                 </div>
                             </div>
@@ -115,7 +115,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <!-- Modal one-->
@@ -172,11 +171,10 @@
                     <div class="modal-body">
                         <p>
                             No Human Experience team is completed without offering Interaction design as a service. It is is a process in which designers focus on creating engaging interfaces with logical and thought out behaviors and actions.
-                            <p></p>
-                            We take a step further and help you to validate your product idea or solution through an interactive high fidelity prototype. This prototype can be used as your first minimum viable product, which targeted end users can engage and test to find answers to the business hypothesis you made during the process.
-
                         </p>
-
+                        <p>
+                            We take a step further and help you to validate your product idea or solution through an interactive high fidelity prototype. This prototype can be used as your first minimum viable product, which targeted end users can engage and test to find answers to the business hypothesis you made during the process.
+                        </p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -196,9 +194,7 @@
                     <div class="modal-body">
                         <p>
                             In another terms "Heuristic evaluation". This is a quick way of finding your product is usable or not. We provide a brief usability assessment report having inspected and evaluated your product based on global usability heuristics and local first hand experiences of our experts. This is something you can get done within a very limited time and budget.
-
                         </p>
-
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -239,10 +235,10 @@
                     <div class="modal-body">
                         <p>
                             We help organizations and teams to implement, maintain and upgrade good UX strategy which eventually help you to create successful product/s gives priority to human experience.
-                            <p></p>
+                        </p>
+                        <p>
                             Our experts will come and evaluate your current process and help you to understand and solves what blocks you from creating a UX culture within your organization.
                         </p>
-
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -250,15 +246,13 @@
                 </div>
             </div>
         </div>
-
     </section>
-
     <!-- Page 03 -->
-    <section class="case-studies">
+    <section class="case-studies" id="caseStudiesSection">
         <div class="container">
             <div class="section-title">
                 <h1>Case <span>Studies</span></h1>
-                <p class="secondory-text" id="puka">Some of our finest crafted work</p>
+                <p class="secondory-text">Some of our finest crafted work</p>
             </div>
             <div class="row">
                 <div class="col-md-6 ">
@@ -314,10 +308,38 @@
             </div>
         </div>
     </section>
-
-
     <!-- Page 04 -->
-    <section class="our-team">
+    <section class="events" id="eventsSection">
+        <div class="container">
+            <div class="section-title">
+                <h1>Events</h1>
+                <p class="secondory-text"><span class="highlighted-text bold-text">Dear UX lovers</span>, we are passionate to share our knowlege and experience with the community</p>
+                <div class="promo-ad">
+                    <h2>10 things you perhaps worry about.</h2>
+                    <ol class="prompt-list confused-guy">
+                        <li>I’m not sure what I’m doing is <span class="bold-text">right or wrong</span> as a <span class="bold-text">UX</span> designer.</li>
+                        <li>I have read about <span class="bold-text">UX</span> but i dont know how to do it <span class="bold-text">practically.</span></li>
+                        <li>How can I <span class="bold-text">convince</span> my customer/boss to do<span class="bold-text"> UX</span></li>
+                        <li>I feel this <span class="bold-text">design</span> works well but they want me to <span class="bold-text">change</span> it.</li>
+                        <li>Project Team follows Agile, how can I do <span class="bold-text">UX with Agile.</span></li>
+                        <li>My Project is in a <span class="bold-text">tight schedule</span>, they dont have time for <span class="bold-text">UX.</span></li>
+                        <li>I want to go up in the <span class="bold-text">career ladder</span> as a <span class="bold-text">UX</span> person but I dont know how.</li>
+                        <li>how can I select the <span class="bold-text">right UX process</span> for my project?</li>
+                        <li>what the hell is <span class="bold-text">UX process?</span></li>
+                        <li>They treat me like a <span class="bold-text">Photoshop guy.</span></li>
+                    </ol>
+                    <div class=coming-soon-text>
+                        Don't worry... we can help you to solve the mystery. A series of structured <span class="bold-text">hands-on workshops</span> addressing above problems and many more will be conducted very soon. (30 pax per group)
+                        <div class="button-panel"><input class="btn primary-button" type="button" value="Register now" /></div>
+                        <h3>Stay in touch for more information.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Page 05 -->
+    <section class="our-team" id="meetTheTeamSection">
         <div class="section-title">
             <h1>Behind the <span>Screen</span></h1>
         </div>
@@ -325,8 +347,7 @@
 
         </div>
     </section>
-
-    <!-- Page 05 -->
+    <!-- Page 06 -->
     <section class="contact-us">
         <div class="container">
             <div class="section-title">
@@ -336,7 +357,7 @@
             <div class="row mapcontainer">
                 <div class="col-md-6">
                     <h2>Norway</h2>
-                    
+
                     <div id="map"></div>
                     <div class="col-md-6">
                         <address>
@@ -353,7 +374,7 @@
                 </div>
                 <div class="col-md-6">
                     <h2>Sri Lanka</h2>
-                    
+
                     <div id="map2"></div>
                     <div class="col-md-6">
                         <address>
@@ -399,6 +420,8 @@
     <script src="assets/js/hex-main.js"></script>
     <script src="assets/js/locationmap.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqmH5Yj4LaVrXLbmIQdwms26HcOqa7SzY&callback=initMap">
+
+
     </script>
 
 </body>
