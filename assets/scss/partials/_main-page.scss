@@ -8,7 +8,6 @@
         position: relative;
     }
     .cartoon-area {
-        
         img {
             display: none;
         }
@@ -23,7 +22,7 @@
         margin: 20px auto;
         opacity: .8;
         position: relative;
-        animation: infinite-moving 1.2s infinite,
+        animation: infinite-moving 1.2s infinite;
     }
 }
 
@@ -35,7 +34,6 @@
         background-color: transparent;
         border: none;
     }*/
-    
     .case-study-item {
         padding: 30px 30px 20px;
         cursor: pointer;
@@ -49,7 +47,9 @@
         background-repeat: no-repeat;
     }
     .case-study-item:hover {
-        h2, h4, p {
+        h2,
+        h4,
+        p {
             color: #fff;
         }
         .case-study-details {
@@ -146,6 +146,29 @@
     }
 }
 
+//Events 
+.events {
+    .promo-ad {
+        margin: 50px 0 40px 0;
+        h2 {
+            text-align: left;
+        }
+    }
+    .prompt-list {
+        text-align: left;
+        font-size: 18px;
+        margin: 30px 0;
+        padding: 0 0 0 25px;
+        
+        li {
+            margin-bottom: 15px;
+        }
+    }
+    .button-panel{
+        margin: 25px 0;
+    }
+}
+
 //Our team
 .our-team {
     h1 {
@@ -189,7 +212,6 @@
             text-align: right;
         }
     }
-    
     .follow-us {
         text-align: center;
         font-size: 14px;
@@ -225,7 +247,6 @@
     .text-muted {
         font-size: 14px;
     }
-    
 }
 
 @media (min-height: 570px) {
@@ -249,7 +270,6 @@
             }
         }
     }
-    
     .our-services {
         .media {
             margin-bottom: 7%;
@@ -272,6 +292,14 @@
             .case-study-details {
                 background-size: 200px;
             }
+        }
+    }
+    .events {
+        .confused-guy {
+            background-image: url(../images/confused.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
         }
     }
     .our-team {

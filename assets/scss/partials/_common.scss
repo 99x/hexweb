@@ -19,6 +19,7 @@ h1 {
         color: $hex-primary-color;
     }
 }
+
 h2 {
     @include common-heading(30px);
     font-weight: normal;
@@ -43,25 +44,73 @@ a:hover {
         color: $dark-font-color;
     }
 }
+.highlighted-text{
+    color: $hex-primary-color;
+}
+.bold-text{
+    font-weight: bold;
+}
+.primary-button{
+    background-color: $hex-primary-color;
+    @include rounded-corners(10px);
+    color: #fff;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 18px;
+}
 //main navigation
 .navbar-hex {
+    display: inline-block;
+    float: right;
     margin: 0;
-    padding: 0;
-    display: none;
+    padding: 80px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 99;
+    
     li {
         list-style: none;
         margin-left: 20px;
-        display: inline-block;
+        cursor: pointer;
+        font-size: 30px;
+        padding-bottom: 22px;
+    }
+    li:hover {
+        color: $hex-red;
     }
 }
 
 //overriding bootstrap modal popup classes
-.modal-content{
-    padding:10px;
+.modal-content {
+    padding: 10px;
 }
-.modal-footer{
-    padding:15px 5px 5px 5px;
-    border-top-width:0;
+
+.modal-footer {
+    padding: 15px 5px 5px 5px;
+    border-top-width: 0;
+}
+
+.mobile-menu-button {
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    margin: 25px;
+    background-size: 35px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    &.open {
+        background-image: url(../images/hamburger.png);
+    }
+    &.close {
+        background-image: url(../images/close.png);
+    }
 }
 
 @media (min-width: 992px) {
@@ -75,5 +124,19 @@ a:hover {
     .section-title {
         margin-top: 100px;
     }
+    .navbar-hex {
+        display: inline-block !important;
+        float: right;
+        position: inherit;
+        margin: 25px 30px;
+        padding: 0;
+        li {
+            display: inline-block;
+            font-size: 16px;
+            padding-bottom: 0;
+        }
+    }
+    .mobile-menu-button {
+        display: none;
+    }
 }
-
